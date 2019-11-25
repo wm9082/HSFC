@@ -28,171 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.addButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.name = new System.Windows.Forms.TextBox();
-            this.age = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.seat = new System.Windows.Forms.TextBox();
-            this.getButton = new System.Windows.Forms.Button();
-            this.removeButton = new System.Windows.Forms.Button();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Clearbutton = new System.Windows.Forms.Button();
+            this.Addbuttton = new System.Windows.Forms.Button();
+            this.Getbutton = new System.Windows.Forms.Button();
+            this.Removebutton = new System.Windows.Forms.Button();
+            this.Age = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
+            this.seatBox = new System.Windows.Forms.TextBox();
+            this.Title = new System.Windows.Forms.Label();
+            this.Name = new System.Windows.Forms.Label();
+            this.Seat = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // addButton
+            // Clearbutton
             // 
-            this.addButton.BackColor = System.Drawing.SystemColors.Window;
-            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(222, 238);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(94, 60);
-            this.addButton.TabIndex = 0;
-            this.addButton.Text = "ADD TO BUS";
-            this.addButton.UseVisualStyleBackColor = false;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            this.Clearbutton.BackColor = System.Drawing.SystemColors.Window;
+            this.Clearbutton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clearbutton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Clearbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Clearbutton.Location = new System.Drawing.Point(449, 384);
+            this.Clearbutton.Name = "Clearbutton";
+            this.Clearbutton.Size = new System.Drawing.Size(82, 36);
+            this.Clearbutton.TabIndex = 0;
+            this.Clearbutton.Text = "Clear by name.";
+            this.Clearbutton.UseVisualStyleBackColor = false;
+            this.Clearbutton.Click += new System.EventHandler(this.Clearbutton_Click);
             // 
-            // textBox1
+            // Addbuttton
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(-12, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(801, 25);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Dan\'s Coach Booking";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Addbuttton.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.Addbuttton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addbuttton.Location = new System.Drawing.Point(261, 332);
+            this.Addbuttton.Name = "Addbuttton";
+            this.Addbuttton.Size = new System.Drawing.Size(124, 36);
+            this.Addbuttton.TabIndex = 2;
+            this.Addbuttton.Text = "Add to bus.";
+            this.Addbuttton.UseVisualStyleBackColor = false;
+            this.Addbuttton.Click += new System.EventHandler(this.Addbuttton_Click);
             // 
-            // textBox2
+            // Getbutton
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(188, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Name";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Getbutton.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.Getbutton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Getbutton.Location = new System.Drawing.Point(407, 332);
+            this.Getbutton.Name = "Getbutton";
+            this.Getbutton.Size = new System.Drawing.Size(133, 36);
+            this.Getbutton.TabIndex = 3;
+            this.Getbutton.Text = "Get by name.";
+            this.Getbutton.UseVisualStyleBackColor = false;
+            this.Getbutton.Click += new System.EventHandler(this.Getbutton_Click_1);
             // 
-            // textBox3
+            // Removebutton
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(188, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Age";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Removebutton.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.Removebutton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Removebutton.Location = new System.Drawing.Point(261, 384);
+            this.Removebutton.Name = "Removebutton";
+            this.Removebutton.Size = new System.Drawing.Size(169, 36);
+            this.Removebutton.TabIndex = 5;
+            this.Removebutton.Text = "Remove by name.";
+            this.Removebutton.UseVisualStyleBackColor = false;
+            this.Removebutton.Click += new System.EventHandler(this.Removebutton_Click);
             // 
-            // name
+            // Age
             // 
-            this.name.Location = new System.Drawing.Point(315, 114);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(261, 20);
-            this.name.TabIndex = 4;
+            this.Age.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age.Location = new System.Drawing.Point(249, 203);
+            this.Age.Name = "Age";
+            this.Age.Size = new System.Drawing.Size(50, 30);
+            this.Age.TabIndex = 8;
+            this.Age.Text = "Age";
             // 
-            // age
+            // nameBox
             // 
-            this.age.Location = new System.Drawing.Point(315, 144);
-            this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(35, 20);
-            this.age.TabIndex = 5;
+            this.nameBox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameBox.Location = new System.Drawing.Point(317, 148);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(100, 26);
+            this.nameBox.TabIndex = 10;
             // 
-            // textBox6
+            // ageBox
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(188, 170);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = "Seat";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ageBox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageBox.Location = new System.Drawing.Point(317, 203);
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(48, 26);
+            this.ageBox.TabIndex = 11;
             // 
-            // seat
+            // seatBox
             // 
-            this.seat.Location = new System.Drawing.Point(315, 172);
-            this.seat.Name = "seat";
-            this.seat.Size = new System.Drawing.Size(35, 20);
-            this.seat.TabIndex = 7;
+            this.seatBox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seatBox.Location = new System.Drawing.Point(502, 202);
+            this.seatBox.Name = "seatBox";
+            this.seatBox.Size = new System.Drawing.Size(48, 26);
+            this.seatBox.TabIndex = 12;
             // 
-            // getButton
+            // Title
             // 
-            this.getButton.BackColor = System.Drawing.SystemColors.Window;
-            this.getButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.getButton.Location = new System.Drawing.Point(371, 238);
-            this.getButton.Name = "getButton";
-            this.getButton.Size = new System.Drawing.Size(94, 60);
-            this.getButton.TabIndex = 8;
-            this.getButton.Text = "GET BY NAME";
-            this.getButton.UseVisualStyleBackColor = false;
-            this.getButton.Click += new System.EventHandler(this.getButton_Click);
+            this.Title.AutoSize = true;
+            this.Title.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Location = new System.Drawing.Point(317, 82);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(233, 38);
+            this.Title.TabIndex = 13;
+            this.Title.Text = "Will\'s wild rides !";
             // 
-            // removeButton
+            // Name
             // 
-            this.removeButton.BackColor = System.Drawing.SystemColors.Window;
-            this.removeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeButton.Location = new System.Drawing.Point(522, 238);
-            this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(121, 60);
-            this.removeButton.TabIndex = 9;
-            this.removeButton.Text = "REMOVE BY NAME";
-            this.removeButton.UseVisualStyleBackColor = false;
-            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            this.Name.AutoSize = true;
+            this.Name.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name.Location = new System.Drawing.Point(249, 151);
+            this.Name.Name = "Name";
+            this.Name.Size = new System.Drawing.Size(50, 23);
+            this.Name.TabIndex = 14;
+            this.Name.Text = "Name";
             // 
-            // clearButton
+            // Seat
             // 
-            this.clearButton.BackColor = System.Drawing.SystemColors.Window;
-            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(371, 334);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(94, 60);
-            this.clearButton.TabIndex = 10;
-            this.clearButton.Text = "CLEAR";
-            this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.Seat.AutoSize = true;
+            this.Seat.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seat.Location = new System.Drawing.Point(403, 202);
+            this.Seat.Name = "Seat";
+            this.Seat.Size = new System.Drawing.Size(74, 23);
+            this.Seat.TabIndex = 15;
+            this.Seat.Text = "Seat No.";
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(384, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 11;
+            this.pictureBox1.Image = global::CoachUI.Properties.Resources.CRASHED_COACH____;
+            this.pictureBox1.Location = new System.Drawing.Point(-54, -32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(905, 537);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.removeButton);
-            this.Controls.Add(this.getButton);
-            this.Controls.Add(this.seat);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.age);
-            this.Controls.Add(this.name);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.addButton);
-            this.Name = "Form1";
-            this.Text = "Dan\'s Coach Booking";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(801, 443);
+            this.Controls.Add(this.Seat);
+            this.Controls.Add(this.Name);
+            this.Controls.Add(this.Title);
+            this.Controls.Add(this.seatBox);
+            this.Controls.Add(this.ageBox);
+            this.Controls.Add(this.nameBox);
+            this.Controls.Add(this.Age);
+            this.Controls.Add(this.Removebutton);
+            this.Controls.Add(this.Getbutton);
+            this.Controls.Add(this.Addbuttton);
+            this.Controls.Add(this.Clearbutton);
+            this.Controls.Add(this.pictureBox1);
+            //this.Name = "Form1";
+            this.Text = "Will\'s wild rides !";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,18 +193,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox name;
-        private System.Windows.Forms.TextBox age;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox seat;
-        private System.Windows.Forms.Button getButton;
-        private System.Windows.Forms.Button removeButton;
-        private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Clearbutton;
+        private System.Windows.Forms.Button Addbuttton;
+        private System.Windows.Forms.Button Getbutton;
+        private System.Windows.Forms.Button Removebutton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox Age;
+        private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.TextBox ageBox;
+        private System.Windows.Forms.TextBox seatBox;
+        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label Seat;
     }
 }
 

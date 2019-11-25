@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8EBAF7C-1193-46CD-A2F0-38D1D4DD13B1}</ProjectGuid>
+    <ProjectGuid>{C74692B4-DADA-4C86-A23B-EEF5B8CD184A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CoachUI</RootNamespace>
     <AssemblyName>CoachUI</AssemblyName>
@@ -82,7 +82,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Dawsongroup-Bus-Coach-ADL-E200.jpg" />
+    <None Include="Resources\Having-Binary-Problems-I-Feel-Bad-for-You-Son-I-Got-1100011-Problems-and-a-Bit-Aint-One..jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crashed coach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CRASHED COACH !!!.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,36 +6,41 @@ namespace CoachProject
 {
     class Coach
     {
-        private Passenger[] contents;
-
+        private Person[] contents;
+        private int nextLocation;
+        private int size;
         public Coach(int size)
         {
-            contents = new Passenger[size];
+            contents = new Person[size];
         }
 
-        public bool addPassenger(Passenger passenger)
+        public bool AddPerson(Person person)
         {
-            if (contents[passenger.getSeat()] == null)
+            if (nextLocation != size)
             {
-                contents[passenger.getSeat()] = passenger;
+                contents[nextLocation] = person;
+                nextLocation++;
                 return true;
             }
             return false;
         }
 
-        public bool removePassenger(Passenger passenger)
+        public bool RemovePerson(Person person)
         {
-            if (contents[passenger.getSeat()] != null)
+            for (int i = 0; i < contents.Length; i++)
             {
-                contents[passenger.getSeat()] = null;
-                return true;
+                if (contents[i] == person)
+                {
+                    contents[nextLocation] = null;
+                    nextLocation--;
+                    return true;
+                }
             }
             return false;
         }
-
-        public Passenger[] getPassengers()
+        public int GetNumberOfPassengers()
         {
-            return contents;
+            
         }
     }
 }

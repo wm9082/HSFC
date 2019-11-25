@@ -18,40 +18,31 @@ namespace CoachUI
         {
             InitializeComponent();
         }
+        
 
-        private void Form1_Load(object sender, EventArgs e)
+        
+        private void Clearbutton_Click(object sender, EventArgs e)
         {
-
+            nameBox.Text = "";
+            ageBox.Text = "";
+            seatBox.Text = "";
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Addbuttton_Click(object sender, EventArgs e)
         {
-
+            Person p1 = new Person(nameBox.Text, Convert.ToInt32(ageBox.Text));
+            int SeatNo = coach.AddPerson(p1);
+            seatBox.Text = SeatNo + "";
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void Removebutton_Click(object sender, EventArgs e)
         {
-            Person p1 = new Person(name.Text, Convert.ToInt32(age.Text));
-       
-            int seatnum = coach.AddPerson(p1);
-            seat.Text = seatnum + "";
+            coach.RemovePersonByName(Name.Text);
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void Getbutton_Click_1(object sender, EventArgs e)
         {
-            name.Text = "";
-            age.Text = "";
-            seat.Text = "";
-        }
-
-        private void getButton_Click(object sender, EventArgs e)
-        {
-            seat.Text = coach.GetSeatByName(name.Text) + "";
-        }
-
-        private void removeButton_Click(object sender, EventArgs e)
-        {
-            coach.RemovePersonByName(name.Text);
+            seatBox.Text = coach.GetSeatByName(nameBox.Text) + "";
         }
     }
 }

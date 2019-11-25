@@ -29,78 +29,85 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.nudgeButton1 = new System.Windows.Forms.Button();
-            this.nudgeButton3 = new System.Windows.Forms.Button();
-            this.nudgeButton2 = new System.Windows.Forms.Button();
-            this.spinButton = new System.Windows.Forms.Button();
+            this.Nudgebutton1 = new System.Windows.Forms.Button();
+            this.Nudgebutton2 = new System.Windows.Forms.Button();
+            this.Nudgebutton3 = new System.Windows.Forms.Button();
+            this.Spinbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(270, 32);
+            this.label1.BackColor = System.Drawing.Color.Blue;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Orange;
+            this.label1.Location = new System.Drawing.Point(250, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 42);
+            this.label1.Size = new System.Drawing.Size(335, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "One Armed Bandit";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "Will\'s Wicked Winners !";
             // 
-            // nudgeButton1
+            // Nudgebutton1
             // 
-            this.nudgeButton1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudgeButton1.Location = new System.Drawing.Point(147, 298);
-            this.nudgeButton1.Name = "nudgeButton1";
-            this.nudgeButton1.Size = new System.Drawing.Size(100, 38);
-            this.nudgeButton1.TabIndex = 1;
-            this.nudgeButton1.Text = "NUDGE";
-            this.nudgeButton1.UseVisualStyleBackColor = true;
+            this.Nudgebutton1.BackColor = System.Drawing.Color.Orange;
+            this.Nudgebutton1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nudgebutton1.Location = new System.Drawing.Point(203, 303);
+            this.Nudgebutton1.Name = "Nudgebutton1";
+            this.Nudgebutton1.Size = new System.Drawing.Size(75, 32);
+            this.Nudgebutton1.TabIndex = 1;
+            this.Nudgebutton1.Text = "Nudge";
+            this.Nudgebutton1.UseVisualStyleBackColor = false;
+            this.Nudgebutton1.Click += new System.EventHandler(this.Nudgebutton1_Click);
             // 
-            // nudgeButton3
+            // Nudgebutton2
             // 
-            this.nudgeButton3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudgeButton3.Location = new System.Drawing.Point(568, 298);
-            this.nudgeButton3.Name = "nudgeButton3";
-            this.nudgeButton3.Size = new System.Drawing.Size(100, 38);
-            this.nudgeButton3.TabIndex = 2;
-            this.nudgeButton3.Text = "NUDGE";
-            this.nudgeButton3.UseVisualStyleBackColor = true;
+            this.Nudgebutton2.BackColor = System.Drawing.Color.Orange;
+            this.Nudgebutton2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nudgebutton2.Location = new System.Drawing.Point(371, 303);
+            this.Nudgebutton2.Name = "Nudgebutton2";
+            this.Nudgebutton2.Size = new System.Drawing.Size(75, 32);
+            this.Nudgebutton2.TabIndex = 2;
+            this.Nudgebutton2.Text = "Nudge";
+            this.Nudgebutton2.UseVisualStyleBackColor = false;
+            this.Nudgebutton2.Click += new System.EventHandler(this.Nudgebutton2_Click);
             // 
-            // nudgeButton2
+            // Nudgebutton3
             // 
-            this.nudgeButton2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudgeButton2.Location = new System.Drawing.Point(359, 298);
-            this.nudgeButton2.Name = "nudgeButton2";
-            this.nudgeButton2.Size = new System.Drawing.Size(100, 38);
-            this.nudgeButton2.TabIndex = 3;
-            this.nudgeButton2.Text = "NUDGE";
-            this.nudgeButton2.UseVisualStyleBackColor = true;
+            this.Nudgebutton3.BackColor = System.Drawing.Color.Orange;
+            this.Nudgebutton3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nudgebutton3.Location = new System.Drawing.Point(527, 303);
+            this.Nudgebutton3.Name = "Nudgebutton3";
+            this.Nudgebutton3.Size = new System.Drawing.Size(75, 32);
+            this.Nudgebutton3.TabIndex = 3;
+            this.Nudgebutton3.Text = "Nudge";
+            this.Nudgebutton3.UseVisualStyleBackColor = false;
+            this.Nudgebutton3.Click += new System.EventHandler(this.Nudgebutton3_Click);
             // 
-            // spinButton
+            // Spinbutton
             // 
-            this.spinButton.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spinButton.Location = new System.Drawing.Point(359, 379);
-            this.spinButton.Name = "spinButton";
-            this.spinButton.Size = new System.Drawing.Size(100, 38);
-            this.spinButton.TabIndex = 4;
-            this.spinButton.Text = "SPIN";
-            this.spinButton.UseVisualStyleBackColor = true;
-            this.spinButton.Click += new System.EventHandler(this.spinButton_Click);
+            this.Spinbutton.BackColor = System.Drawing.Color.Orange;
+            this.Spinbutton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Spinbutton.Location = new System.Drawing.Point(371, 373);
+            this.Spinbutton.Name = "Spinbutton";
+            this.Spinbutton.Size = new System.Drawing.Size(75, 42);
+            this.Spinbutton.TabIndex = 4;
+            this.Spinbutton.Text = "SPIN";
+            this.Spinbutton.UseVisualStyleBackColor = false;
+            this.Spinbutton.Click += new System.EventHandler(this.Spinbutton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.spinButton);
-            this.Controls.Add(this.nudgeButton2);
-            this.Controls.Add(this.nudgeButton3);
-            this.Controls.Add(this.nudgeButton1);
+            this.Controls.Add(this.Spinbutton);
+            this.Controls.Add(this.Nudgebutton3);
+            this.Controls.Add(this.Nudgebutton2);
+            this.Controls.Add(this.Nudgebutton1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "One Armed Bandit";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,10 +116,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button nudgeButton1;
-        private System.Windows.Forms.Button nudgeButton3;
-        private System.Windows.Forms.Button nudgeButton2;
-        private System.Windows.Forms.Button spinButton;
+        private System.Windows.Forms.Button Nudgebutton1;
+        private System.Windows.Forms.Button Nudgebutton2;
+        private System.Windows.Forms.Button Nudgebutton3;
+        private System.Windows.Forms.Button Spinbutton;
     }
 }
 

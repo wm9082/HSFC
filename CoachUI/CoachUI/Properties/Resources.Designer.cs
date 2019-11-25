@@ -63,9 +63,30 @@ namespace CoachUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dawsongroup_Bus_Coach_ADL_E200 {
+        internal static System.Drawing.Bitmap crashed_coach {
             get {
-                object obj = ResourceManager.GetObject("Dawsongroup-Bus-Coach-ADL-E200", resourceCulture);
+                object obj = ResourceManager.GetObject("crashed coach", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CRASHED_COACH____ {
+            get {
+                object obj = ResourceManager.GetObject("CRASHED COACH !!!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Having_Binary_Problems_I_Feel_Bad_for_You_Son_I_Got_1100011_Problems_and_a_Bit_Aint_One_ {
+            get {
+                object obj = ResourceManager.GetObject("Having-Binary-Problems-I-Feel-Bad-for-You-Son-I-Got-1100011-Problems-and-a-Bit-Ai" +
+                        "nt-One.", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

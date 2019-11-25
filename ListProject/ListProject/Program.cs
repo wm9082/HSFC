@@ -8,28 +8,17 @@ namespace ListProject
 {
     class Program
     {
-
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             ListExercises myList = new ListExercises();
-
-            myList.AddNameToList("Adam");
-            myList.AddNameToList("Bert");
-            myList.AddNameToList("Dave");
-            myList.AddNameToList("Ed");
-            myList.AddNameToList("Fred");
-            myList.AddNameToList("Henry");
-
-            Console.WriteLine("Results are " + myList.GetListAsString());
-
-            myList.AddNameToList("Carys");
-            Console.WriteLine("Results are " + myList.GetListAsString());
-
-            myList.AddNameToList("David");
+            Console.WriteLine("Enter five names, one per line");
+            for (int i = 0; i < 5; i++)
+            {
+                myList.AddNameToList(Console.ReadLine());
+            }
+            Console.WriteLine("");
             Console.WriteLine("Results are " + myList.GetListAsString());
             Console.ReadLine();
         }
-
     }
-
 }

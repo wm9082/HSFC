@@ -73,6 +73,16 @@ namespace OneArmedBandit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Aubergine {
+            get {
+                object obj = ResourceManager.GetObject("Aubergine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap banana {
             get {
                 object obj = ResourceManager.GetObject("banana", resourceCulture);
@@ -146,16 +156,6 @@ namespace OneArmedBandit.Properties {
         internal static System.Drawing.Bitmap pear {
             get {
                 object obj = ResourceManager.GetObject("pear", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap plum {
-            get {
-                object obj = ResourceManager.GetObject("plum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

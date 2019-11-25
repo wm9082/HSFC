@@ -7,30 +7,20 @@ namespace CoachProject
         static void Main(string[] args)
         {
             Coach myCoach = new Coach(52);
-
-
-            Passenger pass = new Passenger("Fred Bloggs", 54, 12);
-            Passenger pass2 = new Passenger("Dave Bloggs", 34, 13);
-
-
-            if (myCoach.addPassenger(pass))
-            {
-                Console.WriteLine(pass.getName());
-            }
-
-            if (myCoach.addPassenger(pass2))
-            {
-                Console.WriteLine("Okay");
-            }
-
-            //Outputs the passengers on myCoach.
             for (int i = 0; i < 52; i++)
             {
-                if (myCoach.getPassengers()[i] == null) continue;
-                Console.WriteLine(myCoach.getPassengers()[i].getName());
+                Person p = new Person("unset", 0);
+                Console.WriteLine("Enter name");
+                p.setName(Console.ReadLine());
+                if (myCoach.AddPerson(p) == true)
+                {
+                    Console.WriteLine("success");
+                }
+                else
+                {
+                    Console.WriteLine("Failure");
+                }            
             }
-
-            Console.ReadLine();
         }
     }
 }

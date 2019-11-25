@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A654133E-B809-4D3A-AFA2-4811294156F3}</ProjectGuid>
+    <ProjectGuid>{0322AB29-8E51-432C-AB15-0222FB878D77}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>OneArmedBandit</RootNamespace>
     <AssemblyName>OneArmedBandit</AssemblyName>
@@ -53,7 +53,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WheelOfFruit.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,24 +80,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cherry.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\grape.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\lemon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\melon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\orange.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pair.png" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +105,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lemon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\melon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
