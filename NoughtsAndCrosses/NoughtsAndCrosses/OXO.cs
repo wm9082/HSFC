@@ -8,5 +8,17 @@ namespace NoughtsAndCrosses
 {
     class OXO
     {
+        public enum Piece { Nought, Cross, Space };
+
+        public Piece[,] game = new Piece[3, 3];
+        public static void GenerateGrid()
+        {
+            Console.WriteLine("   |   |   ");            
+            Console.WriteLine("------------");           
+            Console.WriteLine("   |   |   ");            
+            Console.WriteLine("------------");            
+            Console.WriteLine("   |   |   ");
+            Console.WriteLine("");
+        }
     }
 }

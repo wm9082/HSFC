@@ -10,6 +10,8 @@ namespace NoughtsAndCrosses
     {
         static void Main(string[] args)
         {
+            OXO.GenerateGrid();
+            Console.ReadLine();
         }
     }
 }
