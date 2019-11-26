@@ -13,10 +13,10 @@ namespace NoughtsAndCrosses
         public Piece[,] game = new Piece[3, 3];
         public static void GenerateGrid()
         {
-            Console.WriteLine("   |   |   ");            
-            Console.WriteLine("------------");           
-            Console.WriteLine("   |   |   ");            
-            Console.WriteLine("------------");            
+            Console.WriteLine("   |   |   ");           
+            Console.WriteLine("------------");          
+            Console.WriteLine("   |   |   ");           
+            Console.WriteLine("------------");
             Console.WriteLine("   |   |   ");
             Console.WriteLine("");
         }
