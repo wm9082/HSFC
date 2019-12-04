@@ -8,7 +8,7 @@ namespace ListProject
 {
     class ListExercises
     {
-        private string[] names = new string[10];
+        private string[] names = new string[100];
         private int nextFreeLocation = 0;
 
         // addName takes in a name, adds it to the list maintaining the order
@@ -21,7 +21,6 @@ namespace ListProject
             {
                 position = position + 1;
             }
-
             for (int i = nextFreeLocation; i > position; i--)
             {
                 names[i] = names[i - 1];
@@ -30,23 +29,18 @@ namespace ListProject
             nextFreeLocation++;
             return -1;
         }
-
         // FindPositionOfName locates a name in the list
         // passes back an integer (-1 if error), giving inserted location
         public int FindPositionOfName(string theName)
         {
-
             return -1;
         }
         public bool RemoveByPosition(int thePosition)
         {
             // 1) Make sure number inserted is within the range 0 to nextfreelocation –1 
-
             // if not, return false 
-
             //  2) to remove a name, go from position  to nextFreeLocation - 1 
             //  shunt all the other items up (names[i] = names[i+1]) 
-
             // Reduce next free location by 1  
             return true;
         }
