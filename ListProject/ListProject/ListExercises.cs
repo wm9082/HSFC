@@ -15,7 +15,10 @@ namespace ListProject
         // passes back an integer (-1 if error), giving inserted location
         public int AddNameToList(string theName)
         {
-            if (nextFreeLocation > names.Length) return -1;
+            if (nextFreeLocation > names.Length)
+            {
+                return -1;
+            }
             int position = 0;
             while ((position < nextFreeLocation) && (theName.CompareTo(names[position]) > 0))
             {

@@ -10,16 +10,12 @@ namespace ListProject
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Enter your poem:");
             ListExercises myList = new ListExercises();
-            string currentWord = "";
-            Console.WriteLine("Enter your poem, one word per line then input STOP when finished:");
-            while (currentWord != "STOP")
+            string [] currentWord = Console.ReadLine().Split(' ');            
+            for (int i = 0; i < currentWord.Length; i++)
             {
-                currentWord = Console.ReadLine();
-                if (currentWord != "STOP")
-                {
-                    myList.AddNameToList(currentWord);
-                }
+                myList.AddNameToList(currentWord[i]);
             }
             Console.WriteLine("");
             Console.WriteLine("Results are " + myList.GetListAsString());
