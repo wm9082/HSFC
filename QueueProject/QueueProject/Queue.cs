@@ -19,5 +19,20 @@ namespace QueueProject
                 back++;
             }
         }
+
+        public Queue(int length)
+        {
+            queue = new string[length];
+        }
+
+        public string Remove()
+        {
+            if (front != back)
+            {
+                front++;
+                return queue[front];
+            }
+            return null;
+        }
     }
 }
