@@ -30,9 +30,23 @@ namespace QueueProject
             if (front != back)
             {
                 front++;
-                return queue[front];
+                return queue[front - 1];
             }
             return null;
+        }
+
+        public int GetLength()
+        {
+            return back;
+        }
+        public override string ToString()
+        {
+            string List = "";
+            for(int i = front; i < back; i++)
+            {
+                List = List + queue[i] + ",";                
+            }
+            return List;
         }
     }
 }
