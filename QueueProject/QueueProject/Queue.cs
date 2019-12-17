@@ -10,7 +10,6 @@ namespace QueueProject
     {
         private string[] queue;
         private int front, back;
-
         public void Add(string obj)
         {
             if (back < queue.Length)
@@ -19,12 +18,10 @@ namespace QueueProject
                 back++;
             }
         }
-
         public Queue(int length)
         {
             queue = new string[length];
         }
-
         public string Remove()
         {
             if (front != back)
@@ -34,7 +31,6 @@ namespace QueueProject
             }
             return null;
         }
-
         public int GetLength()
         {
             return back;
