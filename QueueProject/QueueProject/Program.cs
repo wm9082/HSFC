@@ -11,7 +11,7 @@ namespace QueueProject
         static void Main(string[] args)
         {
             bool running = true;
-            Queue queue = new Queue(50);
+            QueueShunt queue = new QueueShunt(50);
             while (running)
             { 
                 // V1) Creeps

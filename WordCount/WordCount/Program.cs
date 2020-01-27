@@ -13,10 +13,6 @@ namespace PoemWordCounter
             Console.WriteLine("Please enter your poem:");
             WordCounter dictionary = new WordCounter(100);
             string[] poem = Console.ReadLine().Split(" ");
-            // I should read in line of text
-            // process line of text, looking for individual words
-            // for each word for WordCounter AddString
-            // start with just a word at a time :-)
             for (int i = 0; i < poem.Length; i++)
             {
                 dictionary.AddWordToList(poem[i]);
