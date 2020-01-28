@@ -38,8 +38,8 @@ namespace Searching
 
         public int binarySearch(String[] theList, String itemToSearchFor)
         {
-            int min = 0;                   // the start of the array
-            int max = theList.Length - 1;  // the end of the array
+            int min = 0;                   
+            int max = theList.Length - 1;  
             int mid;
             while (min <= max)
             {
@@ -48,7 +48,7 @@ namespace Searching
                 {
                     return mid;
                 }
-                else if (itemToSearchFor.CompareTo(theList[mid]) < 0)   // found the item
+                else if (itemToSearchFor.CompareTo(theList[mid]) < 0)   
                 {
                     max = mid - 1;
                 }
